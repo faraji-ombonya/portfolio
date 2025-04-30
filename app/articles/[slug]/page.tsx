@@ -50,12 +50,15 @@ export default async function Article({
                         <p>{article.lead}</p>
 
                         {article && (
-                          <Image
-                            src={article.graphic.src}
-                            alt={article.graphic.alt}
-                            width={1310}
-                            height={872}
-                          />
+                          <>
+                            <Image
+                              src={article.graphic.src}
+                              alt={article.graphic.alt}
+                              width={1310}
+                              height={872}
+                            />
+                            <figcaption>{article.graphic.caption}</figcaption>
+                          </>
                         )}
 
                         <RenderContent content={article.content} />

@@ -5,7 +5,23 @@ export const DESCRIPTION =
 
 export const PROJECTS = [
   {
-    id: 1,
+    id: 7,
+    name: "Digital Elimu",
+    description: "Digital learning platform",
+    image: "/187867793.jpeg",
+    link: "https://github.com/digitalelimu",
+    linkText: "github.com",
+  },
+  {
+    id: 6,
+    name: "Rent My Place Kenya",
+    description: "Commercial real estate  platform",
+    image: "/168348172.jpeg",
+    link: "https://github.com/rentmyplacekenya",
+    linkText: "github.com",
+  },
+  {
+    id: 5,
     name: "Image Storage Service",
     description: "Simple image storage service built with FastAPI.",
     image: "/gallery.png",
@@ -13,7 +29,7 @@ export const PROJECTS = [
     linkText: "github.com",
   },
   {
-    id: 2,
+    id: 4,
     name: "Heart Disease Predictor",
     description: "Heart disease prediction service using machine learning.",
     image: "/heartdisease.png",
@@ -30,7 +46,7 @@ export const PROJECTS = [
     linkText: "github.com",
   },
   {
-    id: 4,
+    id: 2,
     name: "Facial Recognition System",
     description:
       " An API that uses Kairos, Amazon Rekognition and DeepFace to recognize faces.",
@@ -39,7 +55,7 @@ export const PROJECTS = [
     linkText: "github.com",
   },
   {
-    id: 5,
+    id: 1,
     name: "Polaris",
     description:
       "A simple Library API that uses Vector Search for similarity search.",

@@ -31,47 +31,74 @@ export default function About() {
                   </h1>
                   <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
                     <p>
-                      As a dedicated software engineer, I thrive on creating
-                      robust and scalable solutions to complex problems. My
-                      expertise spans multiple languages and frameworks,
-                      including Python (Django, Django Rest, Flask, FastAPI),
-                      Golang (GORM, Gin), JavaScript (React, jQuery, TypeScript,
-                      AdonisJS, NextJS), and PHP (Laravel). I also possess a
-                      strong foundation in front-end development with HTML5,
-                      CSS3, Bootstrap, and Tailwind CSS.
+                      <strong>Overview:</strong> I am a seasoned Backend
+                      Engineer with over four years of experience designing and
+                      developing scalable, resilient systems. My expertise spans
+                      multiple programming languages, frameworks, and tools,
+                      with a strong emphasis on backend development, mobile and
+                      web applications, data science, and DevOps practices. I
+                      excel at delivering high-quality, well-tested code and
+                      optimizing system performance to meet complex business
+                      requirements.
                     </p>
                     <p>
-                      My skills extend beyond programming to include relational
-                      and NoSQL database management with MySQL, PostgreSQL,
-                      DynamoDB, and MongoDB. I have hands-on experience with
-                      document databases using MongoDB and object storage with
-                      Amazon S3 and Azure Blob Storage. I’m proficient in
-                      managing message and task queues with Redis and RabbitMQ,
-                      and I’m well-versed in source code control and versioning
-                      with Git and GitHub.
+                      <strong>Programming & Development:</strong> I am
+                      proficient in Python, JavaScript/TypeScript, Go, PHP,
+                      HTML5, and CSS3, enabling me to build robust applications
+                      across the stack. In backend development, I leverage
+                      frameworks like Django, Django REST Framework, Flask, and
+                      FastAPI (Python), AdonisJS (TypeScript), Gin (Go), and
+                      Laravel (PHP) to create scalable RESTful APIs. For
+                      frontend and mobile development, I use React, Next.js,
+                      React Native, and Expo with TypeScript, enhanced by
+                      asynchronous state management with TanStack Query. My
+                      Python expertise extends to data validation with Pydantic,
+                      static typing with MyPy, task scheduling with Celery, ORM
+                      with SQLAlchemy, and web scraping with Beautiful Soup. I
+                      ensure code quality through rigorous unit testing using
+                      pytest, unittest, and coverage.py.
                     </p>
                     <p>
-                      I am also skilled in project management, leveraging tools
-                      like Notion, Jira, and GitHub Projects to ensure smooth
-                      project execution. My technical toolkit includes API
-                      testing and documentation with Postman, containerization
-                      with Docker, and load testing with Locust. I also excel in
-                      task scheduling with Celery, monitoring with Sentry, and
-                      deploying APIs using NGINX.
+                      <strong>Data Science & Machine Learning:</strong> I have
+                      strong skills in data science and machine learning,
+                      utilizing Python libraries such as pandas, NumPy,
+                      Matplotlib, scikit-learn, Hugging Face, Gensim (Word2Vec),
+                      and Jupyter. These tools enable me to perform data
+                      analysis, visualization, and natural language processing,
+                      delivering actionable insights and models for various
+                      applications.
                     </p>
                     <p>
-                      In the realm of data, I have a strong command of data
-                      analysis and manipulation with Pandas, numerical
-                      computations with Numpy, and data visualization with
-                      Matplotlib. I’m also experienced in machine learning tasks
-                      using scikit-learn, Jupyter, and Word2Vec for generating
-                      word embeddings.
+                      <strong>Database & Storage:</strong> My experience in
+                      database management includes relational databases like
+                      MySQL and PostgreSQL, NoSQL databases such as MongoDB and
+                      DynamoDB, and in-memory data stores like Redis. I am
+                      skilled in managing object storage with Amazon S3 and
+                      Azure Blob Storage, as well as implementing message
+                      brokering with RabbitMQ to support efficient system
+                      communication.
                     </p>
                     <p>
-                      I am passionate about continuous learning and enjoy
-                      staying updated with the latest industry trends. My goal
-                      is to leverage my diverse skill set to deliver impactful
-                      software solutions that drive innovation and efficiency.
+                      <strong>DevOps & CI/CD:</strong> I am adept at DevOps
+                      practices, including source code control with Git and
+                      GitHub, containerization with Docker, Docker Compose,
+                      Kubernetes, and Minikube, and continuous integration with
+                      GitHub Actions. I deploy APIs using NGINX, monitor
+                      applications with Sentry, and conduct load testing with
+                      Locust. For project management, I utilize Notion, Jira,
+                      and GitHub Projects, while API testing and documentation
+                      are streamlined with Postman and drf-spectacular
+                      (Swagger-UI, Redoc).
+                    </p>
+                    <p>
+                      <strong>Key Strengths:</strong> My ability to build
+                      scalable backend systems, RESTful APIs, and full-stack
+                      applications, combined with expertise in data science and
+                      DevOps, positions me as a versatile engineer. I am
+                      committed to delivering reliable, high-performance
+                      solutions, with a focus on clean code, thorough testing,
+                      and efficient system architecture to drive business
+                      success.
                     </p>
                   </div>
                 </div>

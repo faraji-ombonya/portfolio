@@ -6,11 +6,11 @@ export const DESCRIPTION =
 export const PROJECTS = [
   {
     id: 7,
-    name: "Digital Elimu",
-    description: "Digital learning platform",
-    image: "/187867793.jpeg",
-    link: "https://github.com/digitalelimu",
-    linkText: "github.com",
+    name: "Genius254",
+    description: "Online learning platform",
+    image: "/g254.png",
+    link: "https://genius254.com/",
+    linkText: "genius254.com",
   },
   {
     id: 6,

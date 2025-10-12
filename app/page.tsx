@@ -16,9 +16,8 @@ export default function HomePage() {
                 </h1>
 
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  I&apos;m Faraji, a Software Engineer based in Nairobi, Kenya.
-                  I find fullfilment in crafting elegant solutions to complex
-                  problems.
+                  I&apos;m Faraji, A seasoned Backend Engineer with 4+ years of
+                  experience crafting resilient systems that scale.
                 </p>
                 <div className="mt-6 flex gap-6">
                   <a

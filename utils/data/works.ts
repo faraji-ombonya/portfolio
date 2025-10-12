@@ -14,7 +14,7 @@ export const WORKS = [
     startDateTime: "2023",
     startDateDisplay: "Dec 2023",
     endDateTime: "",
-    endDateDisplay: "Present",
+    endDateDisplay: "Nov 2024",
     imageUrl: "/sparepap.jpeg",
   },
   {

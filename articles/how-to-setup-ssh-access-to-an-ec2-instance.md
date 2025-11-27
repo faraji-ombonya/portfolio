@@ -2,7 +2,6 @@
 date: "2024-09-30"
 title: "How to set up SSH access to an EC2 instance"
 description: "To set up ssh access to an EC2 instance, we need a publicly accessible hostname or the IP address of the instance, a username and a private key."
-author: "Faraji Ombonya"
 ---
 
 # How to set up SSH access to an EC2 instance

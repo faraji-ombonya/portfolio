@@ -1,9 +1,11 @@
 import Link from "next/link";
 
 import Work from "@/components/work";
-import { ARTICLES } from "@/utils/data/articles";
+import { getSortedArticlesData } from "@/utils/utils";
 
 export default function HomePage() {
+  const articles = getSortedArticlesData();
+
   return (
     <main className="flex-auto theme">
       <div className="sm:px-8 mt-16">
@@ -79,18 +81,16 @@ export default function HomePage() {
             <div className="mx-auto max-w-2xl lg:max-w-5xl">
               <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
                 <div className="flex flex-col gap-16">
-                  {ARTICLES?.map((article) => (
+                  {articles?.map(({ id, title, date, description }) => (
                     <article
-                      key={article?.url}
+                      key={id}
                       className="group relative flex flex-col items-start"
                     >
                       <h2 className="text-base font-semibold tracking-tight text-zinc-800 dark:text-zinc-100">
                         <div className="absolute -inset-x-4 -inset-y-6 z-0 scale-95 bg-zinc-50 opacity-0 transition group-hover:scale-100 group-hover:opacity-100 sm:-inset-x-6 sm:rounded-2xl dark:bg-zinc-800/50"></div>
-                        <Link href={`/articles/${article?.slug}`}>
+                        <Link href={`/articles/${id}`}>
                           <span className="absolute -inset-x-4 -inset-y-6 z-20 sm:-inset-x-6 sm:rounded-2xl"></span>
-                          <span className="relative z-10">
-                            {article?.title}
-                          </span>
+                          <span className="relative z-10">{title}</span>
                         </Link>
                       </h2>
                       <time
@@ -103,10 +103,10 @@ export default function HomePage() {
                         >
                           <span className="h-4 w-0.5 rounded-full bg-zinc-200 "></span>
                         </span>
-                        {article?.date?.display}
+                        {date}
                       </time>
                       <p className="relative z-10 mt-2 text-sm text-zinc-600 dark:text-zinc-400">
-                        {article?.description}
+                        {description}
                       </p>
 
                       <div

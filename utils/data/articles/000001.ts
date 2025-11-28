@@ -12,7 +12,7 @@ export const Article000001 = {
   url: "/how-i-deployed-my-react-application-with-gitHub-pages",
   author: "Faraji Ombonya",
   title: "How I Deployed my React Application with GitHub Pages",
-  lead: "After weeks of massive effort, I finally created my portfolio website and needed a place to deploy. The deployment options I had were Vercel, s3 site on AWS and github pages. I decided to go with github pages because it was free and also simple to deploy. GitHub Pages also had simple CI/CD already integrated. This meant that after a successful setup, all I needed to do was push to production and my application would be deployed.",
+  lead: "",
   graphic: {
     src: "/gh-pages-react-banner.webp",
     alt: "digital art by Dall-E",

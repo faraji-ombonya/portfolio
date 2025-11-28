@@ -61,7 +61,7 @@ export const Article000002 = {
     {
       type: "p",
       value:
-        "There are several advantages to this approach. One, we’re leveraging django ORM’s create_bulk etc. The limitations to this approach is it is only useful if you need to clear the whole database, It does not make sense If your database already has items.",
+        " ",
     },
     { type: "h2", value: "API" },
     { type: "h3", value: "Model" },

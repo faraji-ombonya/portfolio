@@ -1,14 +1,8 @@
-import Image from "next/image";
-
-import { getArticle } from "@/utils/utils";
-import RenderContent from "@/components/renderContent";
+import { getAllArticleIdsV2, getArticleData } from "@/utils/utils";
 import BackButton from "@/components/backButton";
-import { ARTICLES } from "@/utils/data/articles";
 
 export async function generateStaticParams() {
-  return ARTICLES.map((article) => ({
-    slug: article.slug,
-  }));
+  return getAllArticleIdsV2();
 }
 
 export default async function Article({
@@ -16,9 +10,9 @@ export default async function Article({
 }: {
   params: Promise<{ slug: string }>;
 }) {
-  const slug = await params;
+  const { slug } = await params;
 
-  const article = getArticle(slug);
+  const article = await getArticleData(slug);
 
   return (
     <main className="flex-auto w-full">
@@ -31,39 +25,25 @@ export default async function Article({
                   <BackButton />
                   <article>
                     <header className="flex flex-col">
-                      <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-                        {article?.title}
-                      </h1>
                       <time
-                        dateTime={article?.date?.datetime}
+                        dateTime={article.date}
                         className="order-first flex items-center text-base text-zinc-400 dark:text-zinc-500"
                       >
                         <span className="h-4 w-0.5 rounded-full bg-zinc-200 dark:bg-zinc-500"></span>
-                        <span className="ml-3">{article?.date?.display}</span>
+                        <span className="ml-3">{article.date}</span>
                       </time>
                     </header>
-                    {article && (
+
+                    <div
+                      className="mt-8 prose dark:prose-invert"
+                      data-mdx-content="true"
+                    >
                       <div
-                        className="mt-8 prose dark:prose-invert"
-                        data-mdx-content="true"
-                      >
-                        <p>{article.lead}</p>
-
-                        {article && (
-                          <>
-                            <Image
-                              src={article.graphic.src}
-                              alt={article.graphic.alt}
-                              width={1310}
-                              height={872}
-                            />
-                            <figcaption>{article.graphic.caption}</figcaption>
-                          </>
-                        )}
-
-                        <RenderContent content={article.content} />
-                      </div>
-                    )}
+                        dangerouslySetInnerHTML={{
+                          __html: article.contentHtml,
+                        }}
+                      />
+                    </div>
                   </article>
                 </div>
               </div>

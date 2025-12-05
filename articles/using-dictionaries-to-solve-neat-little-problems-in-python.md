@@ -44,8 +44,8 @@ class ProfileTypeCSerializer:
     pass
 ```
 
-Then, lets define a function that receives a request object and returns a
-response, like in Django.
+Then, lets define a class with a method that receives a request object
+and returns a response, like in Django.
 
 ```
 class UserListView()
@@ -76,8 +76,8 @@ class UserListView()
 #### A better solution implemented with a dictionary
 
 To improve this code, we first pack the serializers into a dictionary. The key of
-each item in the dict is a profile type, and the value is the serializer for that
-profile type.
+each item in the dictionary is a profile type, and the value is the serializer
+for that profile type.
 
 ```
 profile_serializers_dict = {
@@ -87,7 +87,7 @@ profile_serializers_dict = {
 }
 ```
 
-Then use the dictionary to pick the correct serialize at runtime and using the
+Then, use the dictionary to pick the correct serializer at runtime and use the
 generic serializer as a fallback.
 
 ```
@@ -102,8 +102,10 @@ class UserListView()
         )
 ```
 
-This approach keeps the view clean an simple, and if you want to add more serializers
-for new profile types, you just define the
+This approach keeps the view clean an simple, and when you inevitable want to
+add more serializers for new profile types, you just define the serializer for the
+profile type and add it to the dictionary. This works without needing to change
+the View.
 
 ## 2. Optimize Nested Loops
 

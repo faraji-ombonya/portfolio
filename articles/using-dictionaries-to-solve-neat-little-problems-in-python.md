@@ -107,9 +107,15 @@ add more serializers for new profile types, you just define the serializer for t
 profile type and add it to the dictionary. This works without needing to change
 the View.
 
-## 2. Optimize Nested Loops
+## 2. Optimizing Read Operations on a list
 
-## 3. Optimize Database Operations
+Lets say you have two lists, a and b, for every item in list a, you want to do an operation
+based on an item in list b. Instead of doing a linear search too find an item in the second list,
+you can pack the items in a dictionary and access the items in constant time
+
+## 3. Optimize Nested Loops
+
+## 4. Optimize Database Operations
 
 ### Example 1: Multiple database calls
 

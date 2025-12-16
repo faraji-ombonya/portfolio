@@ -113,4 +113,4 @@ I'm still working on this article, I want to find and add more relevant examples
 I have some in mind, but I don't know how to best express them yet. For example,
 using dictionaries to optimize database operations.
 
-If you have any interesting use cases, please Leave a comment on this [post on Z](https://x.com/FarajiOmbonya/status/2000938982428033366).
+If you have any interesting use cases, please Leave a comment on this [post on X](https://x.com/FarajiOmbonya/status/2000938982428033366).

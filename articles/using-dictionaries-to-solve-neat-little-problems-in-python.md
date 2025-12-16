@@ -1,5 +1,5 @@
 ---
-date: "2025-12-05"
+date: "2025-12-16"
 title: "Using Dictionaries to Solve Neat Little Problems in Python"
 description: "Let me show you a few tricks i've learnt over the years where I use dictionaries to solve interesting simple problems in python."
 ---

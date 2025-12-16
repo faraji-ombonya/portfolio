@@ -107,40 +107,10 @@ add more serializers for new profile types, you just define the serializer for t
 profile type and add it to the dictionary. This works without needing to change
 the View.
 
-## 2. Optimizing Read Operations on a list
+## Post Scriptum (PS)
 
-Lets say you have two lists, a and b, for every item in list a, you want to do an operation
-based on an item in list b. Instead of doing a linear search too find an item in the second list,
-you can pack the items in a dictionary and access the items in constant time
+I'm still working on this article, I want to find and add more relevant examples.
+I have some in mind, but I don't know how to best express them yet. For example,
+using dictionaries to optimize database operations.
 
-## 3. Optimize Nested Loops
-
-## 4. Optimize Database Operations
-
-### Example 1: Multiple database calls
-
-in a loop, when you have a list, and you want to perfom some operation on the
-list that requires fetching from a database, you can fetch in bulk, pack the
-results in an dictionary and access then in constant time.
-
-suppose you had a list of products that you wanted to upload in bulk.
-
-#### Setup
-
-Lets start by defining two pseudo functions, one the gets one product given a product id,
-and another that gets a list of products given a list of ids
-
-```
-def get_product(id: int) -> Product:
-    """Assume this function needs to get the product from the database."""
-    return Product
-
-
-def get_products(ids: list[int]) -> list(Product):
-    """This function gets all  """
-    products = Product.objects.filter(id__in=ids)
-```
-
-#### Naive Approach
-
-The naive approach of doing this would for to fetch a product
+If you have any interesting use cases, please Leave a comment on this post on X.

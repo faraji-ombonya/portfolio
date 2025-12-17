@@ -18,7 +18,7 @@ Before we start, I'm assuming you already have your code, working locally and
 pushed to github. Note that the repository must be publicly visible. To deploy
 from a private repository, you will be required to upgrade your subscription.
 
-## Setup
+## Setup Github Pages
 
 ![Setup](/deploying-a-next-js-static-site-on-github-pages/setup.png)
 
@@ -29,6 +29,30 @@ from a private repository, you will be required to upgrade your subscription.
    We will go with docs.
 5. Save
 
+## Setup NextJS
+
+1. Next, update your Next js config file to output the export to the docs folder we pointed
+   to earlier.
+
+   `next.config.js`
+
+   ```
+   import type { NextConfig } from "next";
+
+   const nextConfig: NextConfig = {
+   output: "export",
+   distDir: "docs",
+   };
+
+   export default nextConfig;
+   ```
+
+2. Run `npm run build` command to build and export the project to the specified `distDir`.
+   In our case, the `distDir` will be `docs`.
+
+3. Add, commit and push.
+
 ## References
 
 1. [Configure publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+2. [Static Exports](https://nextjs.org/docs/app/guides/static-exports#configuration)

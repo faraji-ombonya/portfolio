@@ -20,15 +20,6 @@ To get started, I created the React application with Vite and Tailwind CSS.
 Checkout this link to see how to initialize a react application with
 [Tailwind CSS and Vite.](https://tailwindcss.com/docs/guides/vite)
 
-To store vectors in my PostgreSQL database, I needed to set up pgvector.
-Pgvector is an open source vector similarity search for Postgres.
-[See Pgvectors documentation](https://github.com/pgvector/pgvector/blob/master/README.md)
-to learn more about pgvector, see this for
-[python specific documentation](https://github.com/pgvector/pgvector-python?tab=readme-ov-file#django)
-to learn more about what it is and how to set it up. Pgvector allowed me to
-store embeddings in a Postgresql database instead of a specialized vector
-database.
-
 After initializing the project, I then configured NPM to use the docs
 directory as the output folder when building for production. This is
 a trick I learnt after painful months of manually renaming my output

@@ -150,15 +150,15 @@ if __name__ == "__main__":
     corpus_iterable = Corpus()
 
     # is where the actual training happens. To train the model, we
-    # instantiate the Word2Vec class and pass parameters to the 
+    # instantiate the Word2Vec class and pass parameters to the
     # class's constructor function. The parameters are as follows:
 
-    
+
     w2v = Word2Vec(
         # A list of lists of tokens
         sentences=corpus_iterable,
 
-        # Dimensionality of the word vectors 
+        # Dimensionality of the word vectors
         vector_size=100,
 
         # maximum distance between the current word and the predicted

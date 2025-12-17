@@ -11,3 +11,24 @@ deployed as a static site. The deployment platform should be free for life
 and it should support CICD.
 
 Okay, now let me show you how to use Github pages to check all these boxes.
+
+## Introduction
+
+Before we start, I'm assuming you already have your code, working locally and
+pushed to github. Note that the repository must be publicly visible. To deploy
+from a private repository, you will be required to upgrade your subscription.
+
+## Setup
+
+![Setup](/deploying-a-next-js-static-site-on-github-pages/setup.png)
+
+1. Go to the repository settings tab.
+2. Click on the Pages tab to open the Github pages settings.
+3. Select the source, deploy from a branch
+4. select the branch and source folder, we have two options either root or docs.
+   We will go with docs.
+5. Save
+
+## References
+
+1. [Configure publishing source](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)

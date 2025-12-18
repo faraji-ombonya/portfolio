@@ -64,7 +64,8 @@ remeber to create it after building.
 
 Also, I'm not sure if adding the `.nojekyll` file every time you rebuild is the
 best approach, if you find a better approach, please leave a comment below
-this post on X describing your solution.
+this [post on X](https://x.com/FarajiOmbonya/status/2001719915779363167)
+describing your solution.
 
 ## References
 

@@ -40,8 +40,10 @@ from a private repository, you will be required to upgrade your subscription.
    import type { NextConfig } from "next";
 
    const nextConfig: NextConfig = {
-   output: "export",
-   distDir: "docs",
+      output: "export",
+      distDir: "docs",
+      basePath: "/repo-name",
+      assetPrefix: "/repo-name",
    };
 
    export default nextConfig;

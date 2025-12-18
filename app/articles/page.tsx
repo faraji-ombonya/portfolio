@@ -15,9 +15,12 @@ export default function ArticlesPage() {
                 <h1 className="text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
                   Writing on software engineering and the tech industry.
                 </h1>
+
                 <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-                  My featured long-form thoughts on software engineering and
-                  related topics.
+                  Why do I write? One, I developed a passion for writing in
+                  Highschool. Two, I want to learn salesmanship, and by
+                  salesmanship I mean being able to express and sell my ideas.
+                  This is partly inspired by Naval Ravikant.
                 </p>
               </header>
               <div className="mt-16 sm:mt-20">

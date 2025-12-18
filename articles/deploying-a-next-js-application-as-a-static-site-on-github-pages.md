@@ -50,7 +50,19 @@ from a private repository, you will be required to upgrade your subscription.
 2. Run `npm run build` command to build and export the project to the specified `distDir`.
    In our case, the `distDir` will be `docs`.
 
-3. Add, commit and push.
+3. Add a `.nojekyll` file at the root of the deployment directory, in our case, the `docs`
+   directory.
+
+4. Add, commit and push.
+
+## Notes
+
+Rebuilding the application deletes the `.nojekyll` file in the `docs` folder. So,
+remeber to create it after building.
+
+Also, I'm not sure if adding the `.nojekyll` file every time you rebuild is the
+best approach, if you find a better approach, please leave a comment below
+this post on X describing your solution.
 
 ## References
 

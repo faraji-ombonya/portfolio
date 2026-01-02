@@ -3,7 +3,7 @@ export const PROJECTS = [
     id: 8,
     name: "Roam and Rove Expeditions",
     description: "Marketing website",
-    image: "/romeandrove.png",
+    image: "/romeandrove.jpeg",
     link: "https://www.roamandrovexpeditions.com",
     linkText: "roamandrovexpeditions.com",
   },

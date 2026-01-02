@@ -1,5 +1,13 @@
 export const PROJECTS = [
   {
+    id: 8,
+    name: "Roam and Rove Expeditions",
+    description: "Marketing website",
+    image: "/romeandrove.png",
+    link: "https://www.roamandrovexpeditions.com",
+    linkText: "roamandrovexpeditions.com",
+  },
+  {
     id: 7,
     name: "Genius254",
     description: "Online learning platform",

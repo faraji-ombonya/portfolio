@@ -20,7 +20,7 @@ export default function About() {
                       className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover "
                       style={{ color: "transparent" }}
                       sizes="(min-width: 1024px) 32rem, 20rem"
-                      src="/1699168535873.jpeg"
+                      src="/66465098.jpeg"
                     />
                   </div>
                 </div>

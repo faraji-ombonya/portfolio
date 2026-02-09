@@ -21,7 +21,7 @@ export const WORKS = [
     companyName: "Cintelcore",
     role: "Backend S.E. (Part Time)",
     startDateTime: "2023",
-    startDateDisplay: "Nov 2023",
+    startDateDisplay: "Aug 2023",
     endDateTime: "2023",
     endDateDisplay: "Nov 2023",
     imageUrl: "/cropped-Original-Cintel-Logo.webp",

@@ -1,19 +1,15 @@
-import { getAllArticleIdsV2, getArticleData } from "@/utils/utils";
 import BackButton from "@/components/backButton";
-import { ResolvingMetadata } from "next";
-
-export async function generateStaticParams() {
-  return getAllArticleIdsV2();
-}
+import { getAllArticleIdsV2, getArticleData } from "@/utils/utils";
 
 type Props = {
   params: Promise<{ slug: string }>;
 };
 
-export async function generateMetadata(
-  { params }: Props,
-  parent: ResolvingMetadata,
-) {
+export async function generateStaticParams() {
+  return getAllArticleIdsV2();
+}
+
+export async function generateMetadata({ params }: Props) {
   const { slug } = await params;
 
   const article = await getArticleData(slug);

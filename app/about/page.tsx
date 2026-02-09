@@ -1,4 +1,12 @@
+import { Metadata } from "next";
 import Image from "next/image";
+
+export const metadata: Metadata = {
+  title:
+    "I’m Faraji Ombonya. I live in Nairobi, Kenya, where I build the future.",
+  description:
+    "I am a seasoned Backend Engineer with over four years of experience designing and developing scalable, resilient systems. My expertise spans multiple programming languages, frameworks, and tools, with a strong emphasis on backend development, mobile and web applications. I excel at delivering high-quality, well-tested code and optimizing system performance to meet complex business requirements.",
+};
 
 export default function About() {
   return (
@@ -36,10 +44,9 @@ export default function About() {
                       developing scalable, resilient systems. My expertise spans
                       multiple programming languages, frameworks, and tools,
                       with a strong emphasis on backend development, mobile and
-                      web applications, data science, and DevOps practices. I
-                      excel at delivering high-quality, well-tested code and
-                      optimizing system performance to meet complex business
-                      requirements.
+                      web applications. I excel at delivering high-quality,
+                      well-tested code and optimizing system performance to meet
+                      complex business requirements.
                     </p>
                     <p>
                       <strong>Programming & Development:</strong> I am

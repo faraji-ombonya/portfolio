@@ -1,15 +1,26 @@
-import { getAllArticleIdsV2, getArticleData } from "@/utils/utils";
 import BackButton from "@/components/backButton";
+import { getAllArticleIdsV2, getArticleData } from "@/utils/utils";
+
+type Props = {
+  params: Promise<{ slug: string }>;
+};
 
 export async function generateStaticParams() {
   return getAllArticleIdsV2();
 }
 
-export default async function Article({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}) {
+export async function generateMetadata({ params }: Props) {
+  const { slug } = await params;
+
+  const article = await getArticleData(slug);
+
+  return {
+    title: article.title,
+    description: article.description,
+  };
+}
+
+export default async function Article({ params }: Props) {
   const { slug } = await params;
 
   const article = await getArticleData(slug);

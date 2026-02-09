@@ -1,11 +1,11 @@
 export const WORKS = [
   {
     companyName: "Kwanza Tukule",
-    role: "Backend S.E. Consultant",
+    role: "Full Stack S.E",
     startDateTime: "2025",
-    startDateDisplay: "May 2025",
+    startDateDisplay: "Feb 2025",
     endDateTime: "",
-    endDateDisplay: "Present",
+    endDateDisplay: "Jan 2026",
     imageUrl: "/177224451.png",
   },
   {

@@ -19,7 +19,7 @@ export const PROJECTS = [
     id: 6,
     name: "Rent254",
     description: "Commercial real estate  platform",
-    image: "/168348172.jpeg",
+    image: "/r254.png",
     link: "https://www.rent254.com/",
     linkText: "rent254.com",
   },

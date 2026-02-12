@@ -18,7 +18,7 @@ export default async function Image({ params }: Props) {
   const { slug } = await params;
 
   const article = await getArticleData(slug);
-  const { id, title, date, description } = article;
+  const { id, title, description } = article;
 
   return new ImageResponse(
     // ImageResponse JSX element

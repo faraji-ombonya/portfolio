@@ -1,5 +1,13 @@
 export const PROJECTS = [
   {
+    id: 9,
+    name: "Move with a Van",
+    description: "Marketing website",
+    image: "/movewithavan.png",
+    link: "https://www.movewithavan.ie/",
+    linkText: "movewithavan.ie",
+  },
+  {
     id: 8,
     name: "Roam and Rove Expeditions",
     description: "Marketing website",
@@ -10,7 +18,7 @@ export const PROJECTS = [
   {
     id: 7,
     name: "Genius254",
-    description: "Online learning platform",
+    description: "Edtech platform",
     image: "/g254.png",
     link: "https://genius254.com/",
     linkText: "genius254.com",

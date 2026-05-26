@@ -1,5 +1,14 @@
 export const WORKS = [
   {
+    companyName: "SparePap",
+    role: "Lead Software Engineer",
+    startDateTime: "2026",
+    startDateDisplay: "Feb 2026",
+    endDateTime: "",
+    endDateDisplay: "Present",
+    imageUrl: "/sparepap.jpeg",
+  },
+  {
     companyName: "Kwanza Tukule",
     role: "Full Stack S.E",
     startDateTime: "2025",

@@ -4,45 +4,57 @@ date: "2026-06-07"
 description: "Here is a list of my fovorite react libraries that i use in production grade applications."
 ---
 
-# My Favorite React Libraries
+# My Favorite React 3rd Party Libraries
 
-Here is an unorderd list of my fovorite react libraries that I use in production grade applications.
+Here is an unorderd list of my favorite 3rd party react libraries that I use in production grade applications.
 
 ## React Hook Form
 
-Provide very convinient hooks to work with forms
+React hook form provide a powerful set of hooks and components for working with forms.
 
 Provide a controller component that you can use to turn basic UI components into form components
 
 ## Zod
 
-The feature I love about zod is that I can define a schema, the infer the type from the schema, i.e
-I dont have to define another type from scratch
-
-Offers an elegant approach to defining a single source of truth.
-
-Works very well with react hook form, you can use a zod resolver and add to hook form, gives you validations and customizable error messages so you dont have to create a
-
-so from one zod schema definition, you can get a type to use with TypeScript, validation rules and error messages to use with react hook form
+Zod offers an elegant approach to defining a single source of truth. With one zod schema definition, you get a type to use with TypeScript, validation rules and error messages to use with react hook form.
 
 ## Axios
 
-My favorite feature here is the interceptors.
+My favorite axios feature is the interceptor. Interceptors work like middleware in other programming
+languages.
 
-For example an interceptor that will refresh the access token any time an request returns a 401.
+For example you can add a response interceptor that will refresh the access token any time a request returns a 401 response, therefore the rest of the application does not need to worry about tokens
+expiring.
+
+You could also write a request interceptor that intercepts the request and adds an Authorization
+token to the Headers.
+
+Another neat feature with axios is that it automatically removes keys with undefined values from
+a payload.
 
 ## Tanstack Query
 
-A powerfull state management library. I just like the way
+The best features of tanstack , in my opinion are, the useQuery and the useMutation hooks.
 
-You can write it as a reusable hook
-Gives you a
+With useQuery, you can:
+- Define a query, and configure it's query key, and whever the query key changes, the query is rerun.
+The best place to apply this is with query parameters. With this setup, when any of the query
+parameter changes, tne query is refetched.
+- You can also set the enable parameter to defined precicely the conditions under which a query is
+able to run.
+- For data that rarely changes on the backend, you can set the garbage collection and stale time
+so your client does not need to refetch the data every time untill it is considered stale or is
+garbage collected.
 
 ## Shadcn
 
-Component library, Gives you consistency
-Ability to customize the look and feel with global css variables
+Shadcn is a component library that gives you a set of reusable building blocks.
+
+Ability to customize the theme global css variables
+Ability to compose complex UIs from simple building blocks
+Ability to add components as you need them
+A library of 3rd party components
 
 ## Date fns
 
-A comprehensive set of utitilies to work with dates
+Date fns is my go to library whenever I want to work with dates. It offers a comprehensive set of utility functions to do just about anything.
